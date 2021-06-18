@@ -1,0 +1,286 @@
+include <stdio.h>
+
+void Programa(void)
+{
+	
+	FILE*guardarDados;
+	guardarDados=fopen("paulo.txt", "a");
+	
+	
+	
+	
+	struct equipa
+	{
+		char nome[20];
+		char modelo[20];
+		int id;
+
+	};
+	
+	struct equipa  minhaequipa;
+	
+	//nome da equipa
+	
+	printf(" nome da equipa: ");
+	fflush(stdin);
+	fgets(minhaequipa.nome,20,stdin);
+fprintf(guardarDados,"%s",minhaequipa.nome);
+	
+	
+	
+	
+	//id da equipa
+	
+    printf("id da equipa: ");
+	scanf("%d",&minhaequipa.id);
+	fprintf(guardarDados,"%d",minhaequipa.id);
+	
+	
+	
+	
+	//mostrar;
+	
+	printf("        o nome da equipa e: %s ",minhaequipa.nome);
+	
+	printf("        id: %d \n ",minhaequipa.id);
+	
+	
+	printf("                                    seja benvido \n");
+	
+	struct jogador
+	{
+		char nome[20],nome2[20],nome3[20];
+		char apelido[20],apelido2[20],apelido3[20];
+		int id,id2,id3;
+		int inicio,inicio2,inicio3;
+		int final,final2,final3;
+		char ativo[20],ativo2[20],ativo3[20];
+		int golos,golos2,golos3;
+
+	};
+	
+	struct jogador meujogador;
+	
+	
+	
+	//nome do jogador
+	
+	printf(" nome do jogador: ");
+	fflush(stdin);
+	fgets(meujogador.nome,20,stdin);
+	fprintf(guardarDados,"%s",meujogador.nome);
+	 
+	 //apelido
+    printf(" apelido do jogador: ");
+	fflush(stdin);
+	fgets(meujogador.apelido,20,stdin);
+	fprintf(guardarDados,"%s",meujogador.apelido);
+	
+	
+	//id do jogador
+	
+    printf("id do jogador: ");
+	scanf("%d",&meujogador.id);
+	fprintf(guardarDados,"%d",meujogador.id);
+	 //incio
+	printf("data do inicio do contrato: ");
+	scanf("%d",&meujogador.inicio);
+	fprintf(guardarDados,"%d",meujogador.inicio);
+	
+	//fim
+	printf("data do fim do contrato: ");
+	scanf("%d",&meujogador.final);
+	fprintf(guardarDados,"%d",meujogador.final);
+	
+	//estado
+	printf(" o jogador esta ativo: ");
+	fflush(stdin);
+	fgets(meujogador.ativo,20,stdin);
+	fprintf(guardarDados,"%s",meujogador.ativo);
+	 //golos
+	printf("golos: ");
+	scanf("%d",&meujogador.golos);
+	fprintf(guardarDados,"%d",meujogador.golos);
+	
+	printf("       /n outro jogador");
+	
+	        //outro jogador
+	printf(" nome do jogador: ");
+	fflush(stdin);
+	fgets(meujogador.nome2,20,stdin);
+	fprintf(guardarDados,"%s",meujogador.nome2);
+	 
+	 //apelido
+    printf(" apelido do jogador: ");
+	fflush(stdin);
+	fgets(meujogador.apelido2,20,stdin);
+	fprintf(guardarDados,"%s",meujogador.apelido2);
+	
+	
+	//id do jogador
+	
+    printf("id do jogador: ");
+	scanf("%d",&meujogador.id2);
+	fprintf(guardarDados,"%d",meujogador.id2);
+	 //incio
+	printf("data do inicio do contrato: ");
+	scanf("%d",&meujogador.inicio2);
+	fprintf(guardarDados,"%d",meujogador.inicio2);
+	
+	//fim
+	printf("data do fim do contrato: ");
+	scanf("%d",&meujogador.final2);
+	fprintf(guardarDados,"%d",meujogador.final2);
+	
+	//estado
+	printf(" o jogador esta ativo: ");
+	fflush(stdin);
+	fgets(meujogador.ativo2,20,stdin);
+	fprintf(guardarDados,"%s",meujogador.ativo2);
+	 //golos
+	printf("golos: ");
+	scanf("%d",&meujogador.golos2);
+	fprintf(guardarDados,"%d",meujogador.golos2);
+	
+	//outro jogador
+	
+	printf("       /n outro jogador");
+	
+		printf(" nome do jogador: ");
+	fflush(stdin);
+	fgets(meujogador.nome3,20,stdin);
+	fprintf(guardarDados,"%s",meujogador.nome3);
+	 
+	 //apelido
+    printf(" apelido do jogador: ");
+	fflush(stdin);
+	fgets(meujogador.apelido3,20,stdin);
+	fprintf(guardarDados,"%s",meujogador.apelido3);
+	
+	
+	//id do jogador
+	
+    printf("id do jogador: ");
+	scanf("%d",&meujogador.id3);
+	fprintf(guardarDados,"%d",meujogador.id3);
+	 //incio
+	printf("data do inicio do contrato: ");
+	scanf("%d",&meujogador.inicio3);
+	fprintf(guardarDados,"%d",meujogador.inicio3);
+	
+	//fim
+	printf("data do fim do contrato: ");
+	scanf("%d",&meujogador.final3);
+	fprintf(guardarDados,"%d",meujogador.final3);
+	
+	//estado
+	printf(" o jogador esta ativo: ");
+	fflush(stdin);
+	fgets(meujogador.ativo3,20,stdin);
+	fprintf(guardarDados,"%s",meujogador.ativo3);
+	 //golos
+	printf("golos: ");
+	scanf("%d",&meujogador.golos3);
+	fprintf(guardarDados,"%d",meujogador.golos3);
+	
+	
+	
+	//mostrar;
+	printf("o id do primeiro jogador: %d \n ",meujogador.id);
+   printf("o id do segundo jogador: %d \n ",meujogador.id2);
+    //printf("o id do terceiro jogador: %d \n ",meujogador.id3)
+    
+	printf(" \n o nome do jogador e: %s ",meujogador.nome);
+	printf(" \n o nome do segundo jogador e: %s ",meujogador.nome2);
+	printf(" \n o nome do terceiro jogador e: %s ",meujogador.nome3);
+	
+	printf(" \n o apelido do jogador e: %s ",meujogador.apelido);
+	printf(" \n o apelido do segundo jogador e: %s ",meujogador.apelido2);
+	printf(" \n o apelido do terceiro jogador e: %s ",meujogador.apelido3);
+	
+	printf(" \n data do inicio do contrato e: %d \n ",meujogador.inicio);
+	printf(" \n data do inicio do contrato do segundo e: %d \n ",meujogador.inicio2);
+	printf(" \n data do inicio do contrato do terceiro e: %d \n ",meujogador.inicio3);
+	
+	printf("\n data do final do contrato e: %d \n ",meujogador.final);
+	printf("\n data do final do contrato segundo e: %d \n ",meujogador.final2);
+    printf("\n data do final do contrato terceiro e: %d \n ",meujogador.final3);
+		
+	printf("\n estado do jogador esta ativo: %s \n ",meujogador.ativo);
+	printf("\n estado do segundo jogador esta ativo: %s \n ",meujogador.ativo2);
+    printf("\n estado do terceiro jogador esta ativo: %s \n ",meujogador.ativo);
+	
+	printf("\n golos: %d \n ",meujogador.golos);
+	printf("\n golos do segundo: %d \n ",meujogador.golos2);
+	printf("\n golos do segundo: %d \n ",meujogador.golos3);
+	
+	
+}
+
+	
+		
+
+//mostrar dados guardados
+
+void show(){
+	
+	FILE*guardarDados;
+	guardarDados=fopen("paulo.txt", "r");
+	
+	char v[1000];
+	
+	while(fgets(v,1000,guardarDados))
+	{
+		printf("%s",v);
+	}
+}
+
+//lista
+void lista(){
+	
+	printf("                 \n barcelona\n");
+	printf("lionel messi \n");
+	printf("neymar jr \n");
+	printf("suarez \n");
+	printf("pique \n");
+	printf("inesta \n");
+	printf("nbanpe \n");
+	
+}
+
+
+int main(int argc, char** argv)
+{
+	 int n;
+	 
+	 printf("                                estudante:paulo joauim\n");
+	 
+	printf("1-cadastrar jogador \n");
+	printf("2-lista do cadastros anterior \n");
+	printf("3-lista de uma equipa \n");
+	scanf("%d",&n);
+	
+	
+	switch(n)
+	{
+	case 1:
+		Programa();
+		break;
+	case 2:
+		show();
+		break;
+	case 3:
+		lista();
+		break;
+	
+	default:
+		break;
+	}
+	
+	
+	
+	
+	getchar();
+	
+	return 0;
+}
